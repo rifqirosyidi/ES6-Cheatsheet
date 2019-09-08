@@ -56,3 +56,51 @@ var name = 'rief';
 
 greet = `${message}, ${name}, How are you?`;
 console.log(greet);
+
+
+
+// ========== CLASS ===========
+
+// // The Default Class In JS 
+// class Parent() {
+
+// }
+
+// Parent.prototype.foo = function() {}
+// Parent.prototype.name = name
+
+// You can use
+class Parent {
+
+    age = 34
+
+    constructor() {
+
+    }
+
+    bar() {
+
+    }
+
+    foo() {
+
+    }
+}
+
+class Child extends Parents {
+    constructor() {
+        super()
+    } 
+
+    baz() {
+
+    }
+}
+
+var parent = new Parent();
+parent.foo();
+parent.age;
+
+var child = new Child();
+child.baz();
+child.bar();
