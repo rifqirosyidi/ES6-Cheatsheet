@@ -70,37 +70,56 @@ console.log(greet);
 // Parent.prototype.name = name
 
 // You can use
-class Parent {
+// class Parent {
 
-    age = 34
+//     static age;
 
-    constructor() {
+//     constructor() {
+//     }
 
-    }
+//     bar() {
+//         console.log(foo);
+//     }
 
-    bar() {
+//     foo() {
+//         console.log(foo);
+//     }
+// }
 
-    }
+// class Child extends Parents {
+//     constructor() {
+//         super()
+//     } 
 
-    foo() {
+//     baz() {
 
-    }
+//     }
+// }
+
+// var parent = new Parent();
+// parent.foo();
+// parent.age;
+
+// var child = new Child();
+// child.baz();
+// child.bar();
+
+// =========== ARROW FUNCION ==========
+
+var defaultFunc = function(a, b) {
+    return a + b;
+};
+
+var arrowFunc = (a,b) => {
+    return a + b;
 }
 
-class Child extends Parents {
-    constructor() {
-        super()
-    } 
+console.log(arrowFunc(2,5))
 
-    baz() {
+// Mapping
+var list = [0,2,3,4];
+list.map(val => val++);
 
-    }
-}
+console.log(list)
 
-var parent = new Parent();
-parent.foo();
-parent.age;
 
-var child = new Child();
-child.baz();
-child.bar();
